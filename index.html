@@ -1,0 +1,1412 @@
+<!DOCTYPE html><html lang="en" style="scroll-behavior: smooth;"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "outline-variant": "#cdc3d2",
+          "surface-variant": "#e3e1ef",
+          "on-primary-container": "#552c85",
+          "on-error-container": "#93000a",
+          "error": "#ba1a1a",
+          "on-primary-fixed": "#2a0053",
+          "surface-bright": "#fcf8ff",
+          "on-tertiary-fixed": "#2a0054",
+          "primary-fixed-dim": "#dab9ff",
+          "outline": "#7c7482",
+          "secondary-fixed": "#e6e0f0",
+          "on-secondary": "#ffffff",
+          "on-surface": "#1b1b24",
+          "on-primary": "#ffffff",
+          "surface-container": "#efecfa",
+          "tertiary-fixed-dim": "#d9b9ff",
+          "on-tertiary": "#ffffff",
+          "on-tertiary-container": "#582495",
+          "on-error": "#ffffff",
+          "secondary": "#605c6a",
+          "surface-container-lowest": "#ffffff",
+          "secondary-container": "#e3ddee",
+          "on-secondary-fixed": "#1d1a26",
+          "on-background": "#1b1b24",
+          "on-surface-variant": "#4b4450",
+          "on-secondary-container": "#65606f",
+          "surface": "#fcf8ff",
+          "surface-tint": "#734aa4",
+          "tertiary-container": "#c79bff",
+          "primary-container": "#c79bfc",
+          "secondary-fixed-dim": "#cac4d4",
+          "on-secondary-fixed-variant": "#484552",
+          "inverse-surface": "#302f3a",
+          "surface-container-high": "#e9e6f5",
+          "on-primary-fixed-variant": "#5a318b",
+          "tertiary-fixed": "#eedcff",
+          "primary-fixed": "#eedbff",
+          "tertiary": "#7544b3",
+          "inverse-on-surface": "#f2effd",
+          "background": "#fcf8ff",
+          "surface-dim": "#dbd8e6",
+          "primary": "#734aa4",
+          "inverse-primary": "#dab9ff",
+          "on-tertiary-fixed-variant": "#5c2999",
+          "surface-container-highest": "#e3e1ef",
+          "error-container": "#ffdad6",
+          "surface-container-low": "#f5f2ff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "margin": "3rem",
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem",
+          "margin-mobile": "1.25rem",
+          "space-xs": "0.25rem",
+          "space-3xl": "6rem",
+          "gutter-mobile": "1rem",
+          "space-md": "1rem",
+          "space-xl": "2.5rem",
+          "space-2xl": "4rem"
+        },
+        "fontFamily": {
+          "display-hero-mobile": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "code-inline": [
+            "JetBrains Mono"
+          ],
+          "headline-lg-mobile": [
+            "Inter"
+          ],
+          "display-hero": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "display-hero-mobile": [
+            "2.25rem",
+            {
+              "lineHeight": "1.2",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "0.875rem",
+            {
+              "lineHeight": "1.4",
+              "letterSpacing": "0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-sm": [
+            "1.125rem",
+            {
+              "lineHeight": "1.4",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "0.875rem",
+            {
+              "lineHeight": "1.55",
+              "letterSpacing": "0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "1.5rem",
+            {
+              "lineHeight": "1.35",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.65",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "1rem",
+            {
+              "lineHeight": "1.6",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "code-inline": [
+            "0.875rem",
+            {
+              "lineHeight": "1.4",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg-mobile": [
+            "1.75rem",
+            {
+              "lineHeight": "1.3",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero": [
+            "3.5rem",
+            {
+              "lineHeight": "1.15",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "2.25rem",
+            {
+              "lineHeight": "1.25",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "0.75rem",
+            {
+              "lineHeight": "1.35",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      }
+    }
+  };</script></head><body class="bg-surface font-body-md text-on-surface relative selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen overflow-x-hidden"><div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden"><div class="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-primary-fixed/30 blur-3xl"></div><div class="absolute top-1/3 -right-40 h-[30rem] w-[30rem] rounded-full bg-tertiary-fixed/25 blur-3xl"></div><div class="absolute -bottom-40 left-1/3 h-96 w-96 rounded-full bg-secondary-fixed/35 blur-3xl"></div></div><header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-surface-container-lowest/80 border-b border-surface-variant"><div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin h-20 flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-primary transition-colors">Anushree Sharma</span><span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-low text-primary border border-surface-variant font-label-sm text-label-sm"><span class="h-1.5 w-1.5 rounded-full bg-primary mr-1.5 animate-pulse"></span>Dev</span></a></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-headline-sm"><a aria-current="page" class="transition-colors text-primary font-headline-sm" data-path="home" href="#home">Home</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#about">About</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="skills" href="#skills">Skills</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#services">Services</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="projects" href="#projects">Projects</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="tel:8278651821" style="opacity: 0;">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm rounded-xl bg-primary-fixed text-on-primary-fixed font-label-md text-label-md border border-primary-fixed-dim hover:bg-primary hover:text-on-primary shadow-[0_4px_16px_rgba(199,155,252,0.3)] transition-all" data-path="contact" href="tel:8278651821">Let's Talk</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUmn21BLTzCneAtqG76Z9WfCHa8S9NlaRernkKOsDAGTDN90jrwN_KiyLKpAJKy5oQRD2A_RSiCYa4xnwYrHDMFFxDGzlZHtig9zlEJFbvlQxtcMWnoeM27FiDlfrXnsxyEGbMEE97zrZBkyztUaINiBm7yyYWUTzPk-KYT4GdQO1HA26NvjUGGrotU0ogjhk6HWnLj5NyLOkInM7fGWTUL8j4fLIWorEP736oVunKQDrKnt-cGNBCsQ"></div></div></header><main class="w-full pt-20 bg-surface/50"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden py-space-xl lg:py-space-3xl" id="home">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left Content Column -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-md z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed/50 text-on-primary-fixed border border-primary-fixed-dim/60 shadow-sm">
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">arrow_back_ios_new</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Hello, I'm Anushree</span>
+</div>
+<h1 class="font-display-hero text-headline-lg-mobile sm:text-display-hero text-on-surface leading-[1.12] tracking-tight">
+            Building Beautiful &amp; Functional Websites That <span class="bg-gradient-to-r from-primary to-on-tertiary-container bg-clip-text text-transparent">Make an Impact.</span>
+</h1>
+<div class="inline-block px-3 py-1 rounded-lg bg-surface-container text-primary font-headline-sm text-headline-sm">
+            WordPress Developer &amp; Technical Architect
+          </div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Passionate WordPress specialist with <span class="font-semibold text-on-surface">2.5+ years of production experience</span> crafting bespoke e-commerce engines, custom plugins, high-conversion Elementor builds, and lightning-fast web architectures.
+          </p>
+<!-- CTAs & Micro stats -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-on-surface text-surface font-label-md text-label-md hover:bg-inverse-surface shadow-[0_8px_24px_rgba(115,74,164,0.22)] transition-all transform hover:-translate-y-0.5" href="#projects">
+<span>View My Work</span>
+<span class="material-symbols-outlined text-sm">arrow_downward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-surface-container-low text-primary border border-surface-variant hover:bg-primary-fixed hover:text-on-primary-fixed font-label-md text-label-md transition-all" href="tel:8278651821">
+<span>Contact Me</span>
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+</div>
+<!-- Quick trust pills -->
+<div class="pt-space-md flex flex-wrap items-center gap-y-2 gap-x-4 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<span>11+ Delivered Projects</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">public</span>
+<span>US, UK, AU &amp; Caribbean Clients</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">speed</span>
+<span>90+ PageSpeed Focus</span>
+</div>
+</div>
+</div>
+<!-- Right Visual Showcase with Photo & Floating Badges -->
+<div class="lg:col-span-5 relative flex items-center justify-center mt-space-lg lg:mt-0">
+<!-- Ambient luminous bloom behind the card -->
+<div class="absolute w-72 h-72 rounded-full bg-primary-fixed/60 blur-3xl -z-10 pointer-events-none"></div>
+<div class="relative w-full max-w-[380px] sm:max-w-[420px] p-4 bg-surface-container-lowest/90 backdrop-blur-xl rounded-3xl border border-surface-variant shadow-[0_20px_50px_rgba(115,74,164,0.12)]">
+<!-- Portrait Image -->
+<div class="relative aspect-square w-full overflow-hidden rounded-2xl bg-surface-container">
+<img alt="Anushree Sharma - Professional WordPress Developer" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt461o5sMaL1smWGPvM3pqmjljFq7u06UEcGXLAYuqjUX3ldg2n_h3L8DTmTfcDHIEVd-ZrK5mSlfWDVRxpQeDgRwSS_1qSSNirJLk4LkY6taU-77hZjx_HvRDUqydixPq3c6mjUFrThVKWQkFN3s0UZIgMJZjQdiX_I-6djS9sLTMsHV92nOcLHdf7PxyO9uPoM6a376UkaQs2y4PxYguAwicGoc843KflHefZ_malD72Ysjf9bs5Jg">
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-surface font-label-sm text-label-sm px-3 py-1.5 bg-on-surface/50 backdrop-blur-md rounded-xl">
+<span class="flex items-center gap-1.5">
+<span class="h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+                  Available for Hire
+                </span>
+<span class="text-primary-fixed-dim">Jaipur, India</span>
+</div>
+</div>
+<!-- Floating Pill Badges -->
+<div class="absolute -top-3 -left-3 sm:-left-6 px-3.5 py-1.5 rounded-full bg-surface-container-lowest/95 backdrop-blur-md border border-surface-variant shadow-md flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm hover:border-primary transition-colors">
+<span class="text-primary">⚡</span> WordPress Core
+            </div>
+<div class="absolute top-1/4 -right-4 sm:-right-8 px-3.5 py-1.5 rounded-full bg-surface-container-lowest/95 backdrop-blur-md border border-surface-variant shadow-md flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm hover:border-primary transition-colors">
+<span class="text-tertiary">🎨</span> Elementor Pro
+            </div>
+<div class="absolute bottom-20 -left-4 sm:-left-8 px-3.5 py-1.5 rounded-full bg-surface-container-lowest/95 backdrop-blur-md border border-surface-variant shadow-md flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm hover:border-primary transition-colors">
+<span class="text-primary">🛒</span> WooCommerce
+            </div>
+<div class="absolute -bottom-3 right-4 px-4 py-2 rounded-2xl bg-surface-container-lowest/95 backdrop-blur-md border border-primary-fixed-dim shadow-lg flex items-center gap-2 text-on-surface font-label-sm text-label-sm">
+<span class="text-amber-500 font-bold">⭐</span>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">2.5+ Years Exp</span>
+<span class="text-secondary font-label-sm text-[0.7rem]">Liyan IT Solutions</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT ME SECTION -->
+<section class="w-full py-space-2xl lg:py-space-3xl bg-surface-container-low/40" id="about">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col gap-space-xs mb-space-xl items-center text-center">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Discover My Journey</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">A Little About Me</h2>
+</div>
+<div class="flex flex-col gap-space-lg max-w-[1000px] mx-auto"><div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant shadow-sm flex flex-col gap-space-md"><p class="font-body-lg text-body-lg text-on-surface leading-relaxed">I am a specialized <strong class="text-primary font-semibold">WordPress Developer</strong> dedicated to turning conceptual designs and complex commercial workflows into intuitive, resilient digital realities. Over the past 2.5+ years at Liyan IT Solutions, I have had the privilege to deliver and optimize web presences for enterprise and direct client accounts across the United States, United Kingdom, Australia, and the Caribbean.</p><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">My engineering philosophy centers on <strong class="text-on-surface font-medium">clean code without theme bloat</strong>. While I am adept at rapid site assembly using Elementor Pro, my real strength lies under the hood: developing custom plugins, crafting bespoke post types and taxonomies with ACF Pro, architecting performant WooCommerce checkouts, and diagnosing intricate PHP/MySQL bottlenecks.</p><div class="pt-2 border-t border-surface-variant flex flex-wrap items-center justify-between gap-y-2 text-secondary font-body-sm text-body-sm"><div class="flex items-center gap-4 flex-wrap"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">location_on</span> Jaipur, Rajasthan, India</span><span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">translate</span> English, Hindi</span></div><span class="px-2.5 py-0.5 rounded-full bg-primary-fixed/40 text-on-primary-fixed font-label-sm text-label-sm font-medium">Full Stack WP Specialist</span></div></div><div class="grid grid-cols-1 sm:grid-cols-3 gap-gutter"><div class="p-space-md rounded-2xl bg-surface-container-lowest border border-surface-variant flex flex-col items-center justify-center text-center shadow-sm"><span class="font-display-hero text-headline-lg text-primary font-bold">2.5+</span><span class="font-label-sm text-label-sm text-secondary font-medium">Years Production Exp.</span></div><div class="p-space-md rounded-2xl bg-surface-container-lowest border border-surface-variant flex flex-col items-center justify-center text-center shadow-sm"><span class="font-display-hero text-headline-lg text-primary font-bold">50+</span><span class="font-label-sm text-label-sm text-secondary font-medium">Delivered Projects</span></div><div class="p-space-md rounded-2xl bg-surface-container-lowest border border-surface-variant flex flex-col items-center justify-center text-center shadow-sm"><span class="font-display-hero text-headline-lg text-primary font-bold">100%</span><span class="font-label-sm text-label-sm text-secondary font-medium">Client Satisfaction</span></div></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs"><div class="p-4 rounded-xl bg-surface-container-lowest border border-surface-variant flex items-start gap-3 shadow-sm"><div class="p-2 rounded-lg bg-surface-container text-primary"><span class="material-symbols-outlined text-xl">devices</span></div><div class="flex flex-col"><span class="font-headline-sm text-body-md font-semibold text-on-surface">Design to Code Fidelity</span><span class="font-body-sm text-body-sm text-on-surface-variant">Pixel-perfect conversion from Figma, Adobe XD, and PSD mockups.</span></div></div><div class="p-4 rounded-xl bg-surface-container-lowest border border-surface-variant flex items-start gap-3 shadow-sm"><div class="p-2 rounded-lg bg-surface-container text-primary"><span class="material-symbols-outlined text-xl">rocket_launch</span></div><div class="flex flex-col"><span class="font-headline-sm text-body-md font-semibold text-on-surface">Speed &amp; Core Web Vitals</span><span class="font-body-sm text-body-sm text-on-surface-variant">Asset minification, caching mechanisms, and sub-second load times.</span></div></div><div class="p-4 rounded-xl bg-surface-container-lowest border border-surface-variant flex items-start gap-3 shadow-sm"><div class="p-2 rounded-lg bg-surface-container text-primary"><span class="material-symbols-outlined text-xl">extension</span></div><div class="flex flex-col"><span class="font-headline-sm text-body-md font-semibold text-on-surface">Custom PHP Logic</span><span class="font-body-sm text-body-sm text-on-surface-variant">Writing clean plugins and hooks when off-the-shelf options fall short.</span></div></div><div class="p-4 rounded-xl bg-surface-container-lowest border border-surface-variant flex items-start gap-3 shadow-sm"><div class="p-2 rounded-lg bg-surface-container text-primary"><span class="material-symbols-outlined text-xl">cloud_sync</span></div><div class="flex flex-col"><span class="font-headline-sm text-body-md font-semibold text-on-surface">Zero-Downtime Migrations</span><span class="font-body-sm text-body-sm text-on-surface-variant">Flawless host-to-host and domain cutovers preserving SEO equity.</span></div></div></div></div>
+</div>
+</section>
+<!-- SKILLS SECTION -->
+<section class="w-full py-space-2xl lg:py-space-3xl" id="skills">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col items-center text-center gap-space-xs mb-space-xl">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Technical Expertise</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">My Technical Skills</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          Core competencies, frameworks, languages, and performance utilities I work with daily.
+        </p>
+</div>
+<!-- Skills Categorized Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- CMS & WordPress Core -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-fixed-dim hover:shadow-[0_10px_30px_rgba(199,155,252,0.18)] transition-all">
+<div class="flex items-center gap-3 mb-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined">data_object</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">WordPress Core &amp; CMS</h3>
+<span class="font-label-sm text-label-sm text-secondary">Foundation &amp; Themes</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">WordPress 6.x</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Elementor Pro</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">ACF Pro</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Custom Post Types</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Child Themes</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Gutenberg Blocks</span>
+</div>
+</div>
+<!-- E-Commerce & Commerce Engines -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-fixed-dim hover:shadow-[0_10px_30px_rgba(199,155,252,0.18)] transition-all">
+<div class="flex items-center gap-3 mb-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined">shopping_cart</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">WooCommerce Systems</h3>
+<span class="font-label-sm text-label-sm text-secondary">E-Commerce &amp; Payments</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">WooCommerce Core</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Stripe &amp; PayPal APIs</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Dynamic Cart Hooks</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Tiered Pricing</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Custom Checkout</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Inventory Sync</span>
+</div>
+</div>
+<!-- Programming & Backend -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-fixed-dim hover:shadow-[0_10px_30px_rgba(199,155,252,0.18)] transition-all">
+<div class="flex items-center gap-3 mb-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Backend &amp; Languages</h3>
+<span class="font-label-sm text-label-sm text-secondary">Clean Execution</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">PHP 8.x (OOP)</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">MySQL Queries</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Plugin Architecture</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">REST API Endpoints</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Action &amp; Filter Hooks</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Cron Jobs</span>
+</div>
+</div>
+<!-- Frontend Web Tech -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-fixed-dim hover:shadow-[0_10px_30px_rgba(199,155,252,0.18)] transition-all">
+<div class="flex items-center gap-3 mb-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined">code</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Frontend Development</h3>
+<span class="font-label-sm text-label-sm text-secondary">Structure &amp; Motion</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Semantic HTML5</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">CSS3 &amp; Flex/Grid</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">JavaScript (ES6+)</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">jQuery</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Tailwind CSS</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Responsive Mobile UI</span>
+</div>
+</div>
+<!-- Optimization & Migrations -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-fixed-dim hover:shadow-[0_10px_30px_rgba(199,155,252,0.18)] transition-all">
+<div class="flex items-center gap-3 mb-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined">speed</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Speed &amp; Operations</h3>
+<span class="font-label-sm text-label-sm text-secondary">DevOps &amp; Performance</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">WP Rocket / LiteSpeed</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Core Web Vitals</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Server Migrations</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">DNS &amp; SSL Setups</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Cloudflare CDN</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Database Cleaning</span>
+</div>
+</div>
+<!-- SEO & Tools -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-fixed-dim hover:shadow-[0_10px_30px_rgba(199,155,252,0.18)] transition-all">
+<div class="flex items-center gap-3 mb-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined">build</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">SEO, Schema &amp; Tools</h3>
+<span class="font-label-sm text-label-sm text-secondary">Visibility &amp; Workflow</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Rank Math &amp; Yoast</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">JSON-LD Schema</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Git &amp; GitHub</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Figma &amp; Adobe XD</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">cPanel &amp; Plesk</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm border border-surface-variant">Google Search Console</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICES SECTION -->
+<section class="w-full py-space-2xl lg:py-space-3xl bg-surface-container-low/40" id="services">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col items-center text-center gap-space-xs mb-space-xl">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Specialized Offerings</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">What I Can Do For You</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          Tailored web development services designed to elevate brand authority, user conversion, and operational speed.
+        </p>
+</div>
+<!-- 6 Service Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Service 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-container hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col justify-between">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">web</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">WordPress Development</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              End-to-end bespoke WordPress site creation. Clean architecture, tailored child themes, and seamless responsive behavior across all viewport dimensions.
+            </p>
+<ul class="flex flex-col gap-1.5 pt-2 text-on-surface font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Figma/PSD to WordPress</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Mobile-First Fluid Layouts</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Clean, maintainable codebase</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-variant/60">
+<a class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1 hover:text-on-primary-container" href="#contact">
+              Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-container hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col justify-between">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">brush</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Elementor Website Design</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Dynamic, visually expressive layouts built with Elementor Pro. Custom global design systems, bespoke dynamic query loops, and lightweight animations.
+            </p>
+<ul class="flex flex-col gap-1.5 pt-2 text-on-surface font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Custom Theme Builder templates</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Dynamic ACF integrations</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>No code-bloat optimization</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-variant/60">
+<a class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1 hover:text-on-primary-container" href="#contact">
+              Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-container hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col justify-between">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">storefront</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">WooCommerce Stores</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              High-converting digital storefronts. Customized single product showcases, multi-currency pricing, frictionless one-step checkouts, and inventory handling.
+            </p>
+<ul class="flex flex-col gap-1.5 pt-2 text-on-surface font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Stripe, PayPal, Klarna setups</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Custom variation swatches</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Optimized sales funnel UX</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-variant/60">
+<a class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1 hover:text-on-primary-container" href="#contact">
+              Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-container hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col justify-between">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">extension</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Custom Plugin Dev</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              When plugins on the market fall short or cause security overhead, I code lightweight custom plugins to carry out precise business calculations and operations.
+            </p>
+<ul class="flex flex-col gap-1.5 pt-2 text-on-surface font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Dynamic quote calculators</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Bulk database editor tooling</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>External REST API sync</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-variant/60">
+<a class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1 hover:text-on-primary-container" href="#contact">
+              Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service 5 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-container hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col justify-between">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">sync_alt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Website Migration</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Moving your WordPress site safely across hosting environments (SiteGround, WP Engine, Hostinger, AWS, cPanel) without missing a single order or query.
+            </p>
+<ul class="flex flex-col gap-1.5 pt-2 text-on-surface font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Zero website downtime guarantee</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>DNS, MX &amp; SSL validation</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Serialized DB string replacement</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-variant/60">
+<a class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1 hover:text-on-primary-container" href="#contact">
+              Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service 6 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-container hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col justify-between">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">published_with_changes</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Speed &amp; Maintenance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Ongoing performance health, proactive bug patching, vulnerability audits, and targeted Core Web Vitals optimization achieving green scores.
+            </p>
+<ul class="flex flex-col gap-1.5 pt-2 text-on-surface font-body-sm text-body-sm">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>90+ Google PageSpeed benchmarks</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Malware scanning &amp; hardening</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+<span>Plugin compatibility testing</span>
+</li>
+</ul>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-variant/60">
+<a class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1 hover:text-on-primary-container" href="#contact">
+              Request Quote <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURED PROJECTS SECTION -->
+<section class="w-full py-space-2xl lg:py-space-3xl" id="projects">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Portfolio Showcase</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">My Recent Work</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+            Turning creative visions into robust, commercially tested web systems across 11+ global client deliveries.
+          </p>
+</div>
+<!-- Filter Buttons (Interactive vanilla JS) -->
+<div class="flex flex-wrap gap-1.5 p-1 bg-surface-container rounded-xl self-start md:self-auto" id="project-filters">
+<button class="filter-btn active px-3.5 py-1.5 rounded-lg text-label-sm font-label-sm bg-surface-container-lowest text-primary shadow-sm font-medium transition-all" data-filter="all" fdprocessedid="l0dcvc">All (11)</button>
+<button class="filter-btn px-3.5 py-1.5 rounded-lg text-label-sm font-label-sm text-secondary hover:text-on-surface font-medium transition-all" data-filter="ecommerce" fdprocessedid="4mx04">E-Commerce</button>
+<button class="filter-btn px-3.5 py-1.5 rounded-lg text-label-sm font-label-sm text-secondary hover:text-on-surface font-medium transition-all" data-filter="corporate" fdprocessedid="q5mzo">Corporate</button>
+<button class="filter-btn px-3.5 py-1.5 rounded-lg text-label-sm font-label-sm text-secondary hover:text-on-surface font-medium transition-all" data-filter="realestate" fdprocessedid="uqyl1">Real Estate</button>
+<button class="filter-btn px-3.5 py-1.5 rounded-lg text-label-sm font-label-sm text-secondary hover:text-on-surface font-medium transition-all" data-filter="custom" fdprocessedid="6jck4bj">Custom Tools</button>
+</div>
+</div>
+<!-- Project Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" id="projects-grid">
+<!-- Project 1: MehoCare -->
+<div class="project-card group rounded-2xl bg-surface-container-lowest border border-surface-variant overflow-hidden hover:border-primary hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col" data-category="ecommerce">
+<!-- Mockup browser bar -->
+<div class="px-4 py-2 bg-surface-container-high/60 border-b border-surface-variant flex items-center justify-between text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+</div>
+<span class="font-code-inline text-[0.7rem] truncate max-w-[140px]">mehocare.com</span>
+<span class="material-symbols-outlined text-xs">lock</span>
+</div>
+<!-- Preview container -->
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Clean minimalist cosmetic and skincare ecommerce store hero interface featuring organic botanical serums on marble counter with soft natural shadows and pastel lavender tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDZD04Dw_p3wXvJhnYw4-j74D5kXVVPDp3GIiScc910yadyxGlV4xJMmNFydWfIvWzEzjZiwtRNLXIMp0j8etJA-UZDByIZPopyVAx4VarSYIhhGp6g7LsKqOI8firj4nZmfoPNGDyAXtCjSX3eP1xLSbcQe-1JmchAADTHk0dAzTo0fhw7kX0FSEfGab0nTHcpnezmqa9r91LZ52gk3H98k4ejG2A6vtoiI-3IdVw">
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-on-surface/70 backdrop-blur-sm text-surface font-label-sm text-[0.7rem]">
+              WooCommerce
+            </div>
+</div>
+<div class="p-5 flex flex-col justify-between flex-1 gap-3">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">MehoCare</h3>
+<span class="font-label-sm text-label-sm text-primary font-medium">E-Commerce</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Natural skincare &amp; wellness online store with customized checkout, ingredient tabs, and subscription purchasing.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">WooCommerce</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Elementor Pro</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Stripe API</span>
+</div>
+<div class="pt-2 border-t border-surface-variant/60 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-secondary">Delivered 2024</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:underline" href="#contact">
+<span>View Case</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 2: Modern Tiles Macarthur -->
+<div class="project-card group rounded-2xl bg-surface-container-lowest border border-surface-variant overflow-hidden hover:border-primary hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col" data-category="custom corporate">
+<div class="px-4 py-2 bg-surface-container-high/60 border-b border-surface-variant flex items-center justify-between text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+</div>
+<span class="font-code-inline text-[0.7rem] truncate max-w-[140px]">moderntilesmacarthur.com.au</span>
+<span class="material-symbols-outlined text-xs">lock</span>
+</div>
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end architectural tile showroom website preview displaying porcelain slabs, mosaic patterns, and modern minimalist living room interiors with luxury lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA6Dm1hRNfjKVgbt_esNX0A4l2M0Qw8hTkHyZnzji6dOiuKTuu6p-UnDYIcQ-sdHOlOBZzsqCv64zyqEEUfLSSIGskz_9VBvNf30f9ZIPBQpzBYnGHKTbJr9Zxiin5KUiCQCMZNGAri-AEWgKgKaaHnFD964Lntd2xEZSviWZCYVFRhuQo5PGqBXpQE26FmiSI2pgCMwRlUU-v5ipFPm79r-wBo8AiuW3t763eLACr">
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-on-surface/70 backdrop-blur-sm text-surface font-label-sm text-[0.7rem]">
+              Custom Catalog
+            </div>
+</div>
+<div class="p-5 flex flex-col justify-between flex-1 gap-3">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Modern Tiles Macarthur</h3>
+<span class="font-label-sm text-label-sm text-primary font-medium">Showroom Catalog</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Australian commercial tile catalog with dynamic finish filters, m2 quantity estimation calculators, and sample ordering.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">ACF Pro</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Dynamic Filters</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Custom PHP</span>
+</div>
+<div class="pt-2 border-t border-surface-variant/60 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-secondary">Sydney, Australia</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:underline" href="#contact">
+<span>View Details</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 3: Sustchain -->
+<div class="project-card group rounded-2xl bg-surface-container-lowest border border-surface-variant overflow-hidden hover:border-primary hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col" data-category="corporate">
+<div class="px-4 py-2 bg-surface-container-high/60 border-b border-surface-variant flex items-center justify-between text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+</div>
+<span class="font-code-inline text-[0.7rem] truncate max-w-[140px]">sustchain.org</span>
+<span class="material-symbols-outlined text-xs">lock</span>
+</div>
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern corporate sustainability platform website interface with clean typography, interactive green supply chain metric dashboards, and high tech charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIT1CcMHpb9CRVDCWuROd5jQrqV9A_cGqZsBi66MUsOST2h_gCgu4RGcrLJtZgPo7fnA1Temh69zDMLweXCI05llhCf-umB6D9ci7qtXHrrtCW9HZa5bbgU0n9PLLoc8HZR8I9SjUxkgPbs9J397AEWAhFRHVaoKhn7pEmbifnfJbWQ8Y-LUt42UcQkmPPkkd-eDcZzS5hdCSWizYiXVowCQy9v4TGYbBLiu5si9kb">
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-on-surface/70 backdrop-blur-sm text-surface font-label-sm text-[0.7rem]">
+              Corporate
+            </div>
+</div>
+<div class="p-5 flex flex-col justify-between flex-1 gap-3">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Sustchain</h3>
+<span class="font-label-sm text-label-sm text-primary font-medium">Enterprise Tech</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Supply chain sustainability &amp; carbon footprint tracking portal with custom case study taxonomy and investor deck downloads.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Custom CPT</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Elementor Pro</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Speed 95+</span>
+</div>
+<div class="pt-2 border-t border-surface-variant/60 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-secondary">Corporate B2B</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:underline" href="#contact">
+<span>View Details</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 4: VP Fonts -->
+<div class="project-card group rounded-2xl bg-surface-container-lowest border border-surface-variant overflow-hidden hover:border-primary hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col" data-category="ecommerce custom">
+<div class="px-4 py-2 bg-surface-container-high/60 border-b border-surface-variant flex items-center justify-between text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+</div>
+<span class="font-code-inline text-[0.7rem] truncate max-w-[140px]">vpfonts.com</span>
+<span class="material-symbols-outlined text-xs">lock</span>
+</div>
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Typography foundry digital store website mockup showcasing bold display serifs with an interactive live font-tester input field and licensing checkout cart" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz2rj0Di17LZ01NQRP4vuQBa04g_Kzhp0LQ-jmc0_Ui6Qiu4SDosWnPvo7Q-TiYck9AMwzMvpTsiZgj7aP4Pux-eI9ZOaR_ayQ5YMTFt4XTsoPW2b-UJ9zYOJfW7cjQXqFdrudFu100qiBCz8cytw8x29cUBW-tHMGCHGY195KIBELhnz-MxY72fC9kqD-qktvzMZZJVmNTydwd012CGGHzK0rEjMj3jRXk80WFGJq">
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-on-surface/70 backdrop-blur-sm text-surface font-label-sm text-[0.7rem]">
+              Font Storefront
+            </div>
+</div>
+<div class="p-5 flex flex-col justify-between flex-1 gap-3">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">VP Fonts</h3>
+<span class="font-label-sm text-label-sm text-primary font-medium">Digital Products</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Independent type foundry platform featuring dynamic JavaScript live font testing, glyph charts, and multi-tier licensing WooCommerce checkout.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Digital Downloads</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">JavaScript Tester</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">WooCommerce</span>
+</div>
+<div class="pt-2 border-t border-surface-variant/60 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-secondary">Creative Tech</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:underline" href="#contact">
+<span>View Details</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 5: GoodPC -->
+<div class="project-card group rounded-2xl bg-surface-container-lowest border border-surface-variant overflow-hidden hover:border-primary hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col" data-category="ecommerce custom">
+<div class="px-4 py-2 bg-surface-container-high/60 border-b border-surface-variant flex items-center justify-between text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+</div>
+<span class="font-code-inline text-[0.7rem] truncate max-w-[140px]">goodpc.store</span>
+<span class="material-symbols-outlined text-xs">lock</span>
+</div>
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Refurbished electronics computer online shop website mockup showing sleek gaming PCs, processor specification comparison grids, and clean dark silver accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCb0Nq0Gwnj6VxFl5KWAR-4x-4LOFLMNm8UtVULTHzcwfj5aWv52taeunRTP1FFysbYV06gxGJIvgrsSrK-UhX03v4UjFAA52Chllnn6Ux9CB9KLB9ri3uELaDxHQOWRpJCYGsi-QkbJFLKMN0VBkIqMNPfinGXNQQ9nHS84JLAsDR5TgEdBldIcvFFkNulaCwUZ-VnMrHiCMJKViGSq-IlWC1SaU9YwQ9hH8XOK3Q">
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-on-surface/70 backdrop-blur-sm text-surface font-label-sm text-[0.7rem]">
+              E-Commerce
+            </div>
+</div>
+<div class="p-5 flex flex-col justify-between flex-1 gap-3">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">GoodPC</h3>
+<span class="font-label-sm text-label-sm text-primary font-medium">Hardware Store</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Refurbished computing hardware marketplace equipped with customizable RAM/SSD specification selectors and warranty add-ons.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">WooCommerce</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Spec Configurator</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">PayPal</span>
+</div>
+<div class="pt-2 border-t border-surface-variant/60 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-secondary">Hardware B2C</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:underline" href="#contact">
+<span>View Details</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 6: Outlet Tiles -->
+<div class="project-card group rounded-2xl bg-surface-container-lowest border border-surface-variant overflow-hidden hover:border-primary hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col" data-category="ecommerce">
+<div class="px-4 py-2 bg-surface-container-high/60 border-b border-surface-variant flex items-center justify-between text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+</div>
+<span class="font-code-inline text-[0.7rem] truncate max-w-[140px]">outlettiles.com</span>
+<span class="material-symbols-outlined text-xs">lock</span>
+</div>
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Discount building supply and ceramic tile warehouse website mockup with discounted product banners, pallet freight calculators, and bright promotional badges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM0eNsvAZN-tbjvJI6X9mQvewEvfDAQQYWscEkuana6eZl7kZn8OjweTv8z6mDWoeDwUKaPVn8EbcgB0-0T-FHO2aCp72gRMxkSJ4JDCW4NZhwynpkgiZlfORemDIJrhaKXYBhNHx_rqDBIa0o6huY8JutXZOoyC8WYq8LbnG4MUOfRwoGm8VwhTxdimDfwjd8s99I2XH0KKkO2mAkvObwSBFYEJKv3NNuuw7TEoqE">
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-on-surface/70 backdrop-blur-sm text-surface font-label-sm text-[0.7rem]">
+              Bulk Discount
+            </div>
+</div>
+<div class="p-5 flex flex-col justify-between flex-1 gap-3">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Outlet Tiles</h3>
+<span class="font-label-sm text-label-sm text-primary font-medium">Wholesale &amp; Retail</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                High-volume discount tiles storefront with automated tiered bulk discounts, freight delivery zones, and inventory management.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Bulk Pricing Rules</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">WooCommerce</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Freight Matrix</span>
+</div>
+<div class="pt-2 border-t border-surface-variant/60 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-secondary">Delivered 2023</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:underline" href="#contact">
+<span>View Details</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 7: Reset4Good -->
+<div class="project-card group rounded-2xl bg-surface-container-lowest border border-surface-variant overflow-hidden hover:border-primary hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col" data-category="ecommerce corporate">
+<div class="px-4 py-2 bg-surface-container-high/60 border-b border-surface-variant flex items-center justify-between text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+</div>
+<span class="font-code-inline text-[0.7rem] truncate max-w-[140px]">reset4good.org</span>
+<span class="material-symbols-outlined text-xs">lock</span>
+</div>
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Eco-conscious online donation and ethical goods marketplace website interface with organic earthy textures, charity milestone progress bars, and clean checkout flow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC30GZzqqm1aCw2tlirSIRcBLSxitAg1RtWB8523yLOSGKcMUCZmpaG41OKqV3P6a2O1Dd2zGCnjAX3yv1KSdqUiG3BO5Mui9QHR2h-819_w8TCeBzkvQfZQBNCyB3NWJxYEUe19uHQg2c3x6AKsSyAl-WYWooPIrI4K6XYqUZvv1etqOfjIk_rHjpfl4LW1ik7DcuUmadR_KRRC6IoJ3CUoWKTLUpgqfzTRixd8-L7">
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-on-surface/70 backdrop-blur-sm text-surface font-label-sm text-[0.7rem]">
+              Social Impact
+            </div>
+</div>
+<div class="p-5 flex flex-col justify-between flex-1 gap-3">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Reset4Good</h3>
+<span class="font-label-sm text-label-sm text-primary font-medium">Eco Marketplace</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Social enterprise marketplace supporting verified eco-initiatives with transparent donation breakdown at checkout.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Stripe Connect</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Elementor Pro</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Responsive UI</span>
+</div>
+<div class="pt-2 border-t border-surface-variant/60 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-secondary">Non-Profit / NGO</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:underline" href="#contact">
+<span>View Details</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 8: SMBDaily -->
+<div class="project-card group rounded-2xl bg-surface-container-lowest border border-surface-variant overflow-hidden hover:border-primary hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col" data-category="corporate">
+<div class="px-4 py-2 bg-surface-container-high/60 border-b border-surface-variant flex items-center justify-between text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+</div>
+<span class="font-code-inline text-[0.7rem] truncate max-w-[140px]">smbdaily.com</span>
+<span class="material-symbols-outlined text-xs">lock</span>
+</div>
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High traffic digital news publication website layout with magazine-style editorial grids, newsletter subscription flyouts, and clean financial journalism typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDWaYrkRupCBs9gWRt1Zi7ECTJTFbJAQ00waFNv-0Tv8E9burOE8gLiXS6U8Bs-q7X2QVK6_lXZ7mfHDMFiIUUmwWJbtaD-4ESChSdhd5K0GB86Q5k2Zf6kDzjAHAi_QAcgwTG6-HIpk-VRfzgeuMLzyNP7pqVoImlMJRSWuUbi2da8ngR1NiEfAbxIpIBXQcm-ZTUVuRrV-FEGNADRMbyCxY8Q5w74qzr5fQOZ89L">
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-on-surface/70 backdrop-blur-sm text-surface font-label-sm text-[0.7rem]">
+              Media &amp; News
+            </div>
+</div>
+<div class="p-5 flex flex-col justify-between flex-1 gap-3">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">SMBDaily</h3>
+<span class="font-label-sm text-label-sm text-primary font-medium">Digital Publication</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Fast-loading online publication platform built for high-traffic spikes, custom author taxonomy, and Google News schema.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Redis Caching</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Schema Markup</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">ACF Flexible</span>
+</div>
+<div class="pt-2 border-t border-surface-variant/60 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-secondary">High-Traffic News</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:underline" href="#contact">
+<span>View Details</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 9: Beachfront Miami Condos -->
+<div class="project-card group rounded-2xl bg-surface-container-lowest border border-surface-variant overflow-hidden hover:border-primary hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col" data-category="realestate">
+<div class="px-4 py-2 bg-surface-container-high/60 border-b border-surface-variant flex items-center justify-between text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+</div>
+<span class="font-code-inline text-[0.7rem] truncate max-w-[140px]">beachfrontmiami.com</span>
+<span class="material-symbols-outlined text-xs">lock</span>
+</div>
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury beachfront highrise condo building portfolio website preview with tropical turquoise ocean views, floorplan modal viewer, and sleek architectural lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVbX4yWRUC75_WW56gw4qo1T6tF5_kPWwRtm4Msc0vrux3uHDPKdOk_dL5OOMiS22zXzf9BzcMtXkL2HEuu_PLw9RRQflr_79eUWPhr8bbJUNY9j9nEtAmsqXAT_Wxpd3Z2SlR3rDXkvnBFEYum7YLBDJ_4FHIn2H613w0qHPLrt7LaPbzcTiBfTczFRYkjWasB_WnyT9--SHj6jVQkKNNionLFj13yNFZg3a0OU1d">
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-on-surface/70 backdrop-blur-sm text-surface font-label-sm text-[0.7rem]">
+              Luxury Real Estate
+            </div>
+</div>
+<div class="p-5 flex flex-col justify-between flex-1 gap-3">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Beachfront Miami Condos</h3>
+<span class="font-label-sm text-label-sm text-primary font-medium">Real Estate Portal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Premium Florida luxury real estate portal with custom building directories, interactive floor plans, and VIP agent booking.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">MLS/IDX Style CPT</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Interactive Map</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-[0.7rem] text-secondary">Lead Capture</span>
+</div>
+<div class="pt-2 border-t border-surface-variant/60 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-secondary">Miami, Florida (US)</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:underline" href="#contact">
+<span>View Details</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 10: BBVA Haiti -->
+<div class="project-card group rounded-2xl bg-surface-container-lowest border border-surface-variant overflow-hidden hover:border-primary hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col" data-category="corporate">
+
+
+
+</div>
+<!-- Project 11: CK Services -->
+<div class="project-card group rounded-2xl bg-surface-container-lowest border border-surface-variant overflow-hidden hover:border-primary hover:shadow-[0_12px_32px_-8px_rgba(199,155,252,0.28)] transition-all flex flex-col" data-category="corporate custom">
+
+
+
+</div>
+</div>
+</div>
+</section>
+<!-- CUSTOM DEVELOPMENT SHOWCASE (Code & Deep Engineering) -->
+<section class="w-full py-space-2xl lg:py-space-3xl bg-surface-container-low/40">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col items-center text-center gap-space-xs mb-space-xl">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Engineered Solutions</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Beyond Website Design</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Solving complex business bottlenecks through custom WordPress plugin architecture, custom MySQL schema queries, and tailored API hooks.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Deep Feature 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-md bg-primary-fixed/40 text-on-primary-fixed font-label-sm text-label-sm font-semibold">Plugin Architecture</span>
+<span class="font-code-inline text-secondary text-xs">v1.4.2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Custom Dynamic Pricing &amp; Quotation Calculator</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Engineered a standalone custom plugin eliminating commercial calculator plugin bloat. Allows users to slide dimensions, choose materials, calculate live pricing through AJAX, and download a branded PDF quote instant with serialized lead tracking.
+            </p>
+<!-- Code snippet card -->
+<div class="p-3 rounded-xl bg-inverse-surface text-inverse-on-surface font-code-inline text-[0.75rem] leading-relaxed overflow-x-auto shadow-inner">
+<div class="text-tertiary-container">// Custom AJAX calculation handler</div>
+<span class="text-primary-fixed-dim">add_action</span>('wp_ajax_nopriv_calc_quote', 'run_quote');<br>
+<span class="text-amber-300">function</span> <span class="text-emerald-300">run_quote</span>() {<br>
+              &nbsp;&nbsp;$m2 = floatval($_POST['sqm']);<br>
+              &nbsp;&nbsp;$est = $m2 * get_material_rate();<br>
+              &nbsp;&nbsp;wp_send_json_success(['total' =&gt; $est]);<br>
+              }
+            </div>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-variant flex items-center justify-between text-secondary font-label-sm text-label-sm">
+<span>AJAX • TCPDF • WP REST</span>
+<span class="text-emerald-600 font-medium">99.8% Faster</span>
+</div>
+</div>
+<!-- Deep Feature 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-md bg-primary-fixed/40 text-on-primary-fixed font-label-sm text-label-sm font-semibold">WooCommerce Tooling</span>
+<span class="font-code-inline text-secondary text-xs">Admin Utility</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Batch Product &amp; ACF Custom Field Editor</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Created an internal administrative batch update utility allowing store staff to modify 500+ product prices, stock thresholds, and ACF metadata records simultaneously within seconds without server timeouts or PHP memory leaks.
+            </p>
+<!-- Code snippet card -->
+<div class="p-3 rounded-xl bg-inverse-surface text-inverse-on-surface font-code-inline text-[0.75rem] leading-relaxed overflow-x-auto shadow-inner">
+<div class="text-tertiary-container">// Safe chunked batch updates</div>
+              global <span class="text-primary-fixed-dim">$wpdb</span>;<br>
+<span class="text-amber-300">foreach</span> (array_chunk($pids, 50) <span class="text-amber-300">as</span> $chunk) {<br>
+              &nbsp;&nbsp;wc_transaction_query('start');<br>
+              &nbsp;&nbsp;$wpdb-&gt;query("UPDATE ... ");<br>
+              &nbsp;&nbsp;wc_transaction_query('commit');<br>
+              }
+            </div>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-variant flex items-center justify-between text-secondary font-label-sm text-label-sm">
+<span>MySQL • Transients • Hooks</span>
+<span class="text-emerald-600 font-medium">0 Timeouts</span>
+</div>
+</div>
+<!-- Deep Feature 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant flex flex-col justify-between shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-md bg-primary-fixed/40 text-on-primary-fixed font-label-sm text-label-sm font-semibold">Architecture Framework</span>
+<span class="font-code-inline text-secondary text-xs">Taxonomy Engine</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Modular Custom Post Type &amp; Meta Architecture</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Structured a normalized WordPress data model separating client portfolios, staff profiles, and property listings. Features nested relational query caching and instant front-end filtering without reloading the page.
+            </p>
+<!-- Code snippet card -->
+<div class="p-3 rounded-xl bg-inverse-surface text-inverse-on-surface font-code-inline text-[0.75rem] leading-relaxed overflow-x-auto shadow-inner">
+<div class="text-tertiary-container">// Hierarchical relationship cache</div>
+              $cached = get_transient('prop_matrix');<br>
+<span class="text-amber-300">if</span> ( <span class="text-primary-fixed-dim">false</span> === $cached ) {<br>
+              &nbsp;&nbsp;$q = <span class="text-amber-300">new</span> WP_Query(['post_type'=&gt;'condo']);<br>
+              &nbsp;&nbsp;set_transient('prop_matrix', $q, HOUR_IN_SECONDS);<br>
+              }
+            </div>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-variant flex items-center justify-between text-secondary font-label-sm text-label-sm">
+<span>ACF Pro • Custom Tax • Caching</span>
+<span class="text-emerald-600 font-medium">Sub-50ms Query</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EXPERIENCE TIMELINE SECTION -->
+<section class="w-full py-space-2xl lg:py-space-3xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col items-center text-center gap-space-xs mb-space-xl">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Career History</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">My Professional Journey</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          Continuous hands-on execution delivering mission-critical web software.
+        </p>
+</div>
+<div class="max-w-[800px] mx-auto">
+<div class="relative pl-8 md:pl-10 border-l-2 border-primary-fixed">
+<!-- Milestone dot -->
+<div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-surface border-4 border-primary shadow-sm"></div>
+<!-- Role Card -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant shadow-sm hover:border-primary-fixed-dim transition-all">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+<div>
+<h3 class="font-headline-md text-headline-sm sm:text-headline-md text-on-surface">WordPress Developer</h3>
+<span class="font-body-md text-body-md text-primary font-medium">Liyan IT Solutions</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed font-label-sm text-label-sm self-start sm:self-auto font-medium">
+                2.5+ Years • Present
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-4">
+              Leading the development, optimization, and maintenance of client websites spanning e-commerce, corporate marketing, media publications, and international organizations.
+            </p>
+<!-- Accomplishments List -->
+<div class="space-y-3 font-body-sm text-body-sm text-on-surface">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
+<span>Engineered <strong>11+ production-ready WordPress websites</strong> from Figma and PSD prototypes to launch with zero critical bugs.</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
+<span>Programmed bespoke custom plugins and extended WordPress core action/filter hooks to satisfy specialized client business models.</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
+<span>Executed zero-downtime server and domain migrations across complex hosting setups, configuring Cloudflare, DNS records, and SSL certs.</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
+<span>Spearheaded Core Web Vitals optimization across legacy client sites, <strong>slashing initial load times by up to 55%</strong> and raising PageSpeed ratings above 90.</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
+<span>Collaborated directly with stakeholders across the United States, UK, Australia, and Caribbean to translate high-level product demands into technical solutions.</span>
+</div>
+</div>
+<!-- Stacks used in role -->
+<div class="mt-space-md pt-space-sm border-t border-surface-variant flex flex-wrap gap-1.5">
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">WordPress 6</span>
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">PHP OOP</span>
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">WooCommerce</span>
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Elementor Pro</span>
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">ACF Pro</span>
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">MySQL</span>
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Git</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- WHY CHOOSE ME SECTION -->
+<section class="w-full py-space-2xl lg:py-space-3xl bg-surface-container-low/40">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col items-center text-center gap-space-xs mb-space-xl">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Value Delivered</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Why Work With Me?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          A dependable engineering partner who treats your website’s performance, conversion, and aesthetics with equal care.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-fixed-dim transition-all flex flex-col gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Battle-Tested Experience</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            With 11+ completely launched client platforms, I know where WordPress builds typically fail and how to engineer them for longevity from day one.
+          </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-fixed-dim transition-all flex flex-col gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">public</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">International Delivery</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Comfortable collaborating across varied time zones with clients in the US, United Kingdom, and Australia with transparent communications and milestone tracking.
+          </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-fixed-dim transition-all flex flex-col gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">responsive_layout</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Flawless Responsiveness</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Mobile-first execution ensuring zero cutoffs, legible typography hierarchy, and effortless touch targets across iPhones, Androids, tablets, and 4K desktops.
+          </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-fixed-dim transition-all flex flex-col gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">troubleshoot</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Problem-Solving Mindset</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Deep experience troubleshooting tough WordPress PHP fatal errors, memory limit crashes, WooCommerce checkout failures, and conflicting third-party scripts.
+          </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-fixed-dim transition-all flex flex-col gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">center_focus_strong</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Attention to Detail</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            I don't just build to "approximate" mockups. Spacing tokens, color contrast, micro-interactions, and typography line-heights are aligned meticulously to pixel fidelity.
+          </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant hover:border-primary-fixed-dim transition-all flex flex-col gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">update</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Modern Standards</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Always adopting contemporary standards: modern PHP 8 strict types, block editor enhancements, semantic schema, and headless REST/GraphQL methodologies.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="w-full py-space-2xl lg:py-space-3xl relative overflow-hidden" id="contact">
+<!-- Ambient lavender backdrop circle -->
+<div class="absolute bottom-0 right-10 w-96 h-96 rounded-full bg-primary-fixed/30 blur-3xl -z-10 pointer-events-none"></div>
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col items-center text-center gap-space-xs mb-space-xl">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Start A Conversation</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Let's Build Something Amazing Together!</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          Have a project in mind, need custom plugin work, or looking for a full-time WordPress specialist? Let's connect and create something impactful.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left: Direct Info Card -->
+<div class="lg:col-span-5 p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-3">
+<img alt="Anushree Sharma" class="w-14 h-14 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDe37WKrnTt0L-owNWXAwoWN9nBcybbW5jLXmaGCkMQI1tXP_Yfe41HW0sGJK2LZkmqqKWl0eDAVNICa4-CWLZY-mGiNv2TFY_HisCF_VVk3BlJS9dMOOhaEtg2lZ_CwZd2u8ll0lWSbrS6gI2YLkzOic15pPbL7PPpVyDp5TAoMDLOUsU3eSFBnFS7blg4-mS25t7bfi30H-mPJLFpJN7LA_KSqjMSTDLQnz-fyUzkTtFJPZ4dhprQg">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Anushree Sharma</h3>
+<p class="font-body-sm text-body-sm text-secondary">WordPress &amp; Web Developer</p>
+</div>
+</div>
+<!-- Availability indicator -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 font-label-sm text-label-sm">
+<span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span>Open for Freelance &amp; Full-time Roles</span>
+</div>
+<div class="flex flex-col gap-space-sm pt-2">
+<!-- Email -->
+<a class="flex items-center gap-3 p-3 rounded-xl bg-surface-container hover:bg-primary-fixed/40 transition-colors group" href="mailto:anushree.sharma827@gmail.com">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary group-hover:text-on-primary-fixed">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Email Directly</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface group-hover:text-primary transition-colors">anushree.sharma827@gmail.com</span>
+</div>
+</a><a class="flex items-center gap-3 p-3 rounded-xl bg-surface-container hover:bg-primary-fixed/40 transition-colors group" href="tel:8278651821"><div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary group-hover:text-on-primary-fixed"><span class="material-symbols-outlined">call</span></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-secondary">Call / WhatsApp</span><span class="font-body-sm text-body-sm font-medium text-on-surface group-hover:text-primary transition-colors">+91 8278651821</span></div></a>
+<!-- Location -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Base Location</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Jaipur, Rajasthan, India</span>
+</div>
+</div>
+<!-- Social Links -->
+<div class="grid grid-cols-2 gap-3 pt-2">
+<a class="flex items-center justify-center gap-2 p-3 rounded-xl border border-surface-variant hover:border-primary text-on-surface hover:text-primary transition-all font-label-md text-label-md" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base">north_east</span>
+<span>LinkedIn</span>
+</a>
+<a class="flex items-center justify-center gap-2 p-3 rounded-xl border border-surface-variant hover:border-primary text-on-surface hover:text-primary transition-all font-label-md text-label-md" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base">code</span>
+<span>GitHub</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Right: Interactive Contact Form -->
+<div class="lg:col-span-7 p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-variant shadow-sm">
+<form class="flex flex-col gap-space-md" id="portfolio-contact-form" onsubmit="event.preventDefault(); document.getElementById('form-success-banner').classList.remove('hidden'); this.reset();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="name">Your Name *</label>
+<input class="px-4 py-3 rounded-xl bg-surface border border-surface-variant focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm transition-all" id="name" placeholder="John Doe" required="" type="text" fdprocessedid="49e66">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="email">Email Address *</label>
+<input class="px-4 py-3 rounded-xl bg-surface border border-surface-variant focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm transition-all" id="email" placeholder="john@example.com" required="" type="email" fdprocessedid="3kzab">
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="subject">Project or Subject *</label>
+<input class="px-4 py-3 rounded-xl bg-surface border border-surface-variant focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm transition-all" id="subject" placeholder="e.g. New E-Commerce Website / Full-Time WP Role" required="" type="text" fdprocessedid="la4j5c">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="message">Your Message *</label>
+<textarea class="px-4 py-3 rounded-xl bg-surface border border-surface-variant focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm transition-all resize-none" id="message" placeholder="Tell me about your site vision, current challenges, timeline, or scope..." required="" rows="4"></textarea>
+</div>
+<div class="hidden p-3 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-200 font-body-sm text-body-sm flex items-center gap-2" id="form-success-banner">
+<span class="material-symbols-outlined text-emerald-600">check_circle</span>
+<span>Thank you! Your message has been noted. I'll get back to you within 24 hours.</span>
+</div>
+<button class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-on-primary hover:bg-on-primary-container font-label-md text-label-md shadow-[0_8px_24px_rgba(115,74,164,0.25)] hover:shadow-lg transition-all self-start" type="submit" fdprocessedid="lyc57">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Project Filtering Script -->
+<script>
+    (function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Toggle active UI button states
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+            b.classList.add('text-secondary');
+          });
+          btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+          btn.classList.remove('text-secondary');
+
+          const filterValue = btn.getAttribute('data-filter');
+
+          projectCards.forEach(card => {
+            const categories = card.getAttribute('data-category') || '';
+            if (filterValue === 'all' || categories.includes(filterValue)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low/70 border-t border-surface-variant mt-space-3xl"><div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-space-2xl"><div class="md:col-span-5 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface">Anushree Sharma</span><span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm border border-surface-variant">Portfolio</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Building Creative Digital Experiences. Specialized WordPress developer focused on modern web architectures, speed, and bespoke aesthetics.</p><div class="flex items-center gap-space-sm pt-space-xs"><a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary hover:text-on-primary-container transition-colors" href="mailto:anushree.sharma827@gmail.com"><span class="material-symbols-outlined text-sm">mail</span>anushree.sharma827@gmail.com</a><a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="tel:8278651821"><span class="material-symbols-outlined text-sm">call</span>Call: +91 8278651821</a></div></div><div class="md:col-span-4 flex flex-col gap-space-sm"><h3 class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Quick Navigation</h3><div class="grid grid-cols-2 gap-space-xs font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#home">Home</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="services" href="#services">Services</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="about" href="#about">About</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="projects" href="#projects">Projects</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="skills" href="#skills">Skills</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#contact">Contact</a></div></div><div class="md:col-span-3 flex flex-col gap-space-sm"><h3 class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Connect</h3><div class="flex flex-col gap-space-xs font-body-sm text-body-sm"><a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="https://linkedin.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-sm">north_east</span>LinkedIn</a><a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-sm">code</span>GitHub</a><a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="mailto:anushree.sharma827@gmail.com"><span class="material-symbols-outlined text-sm">alternate_email</span>Email Direct</a><a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="tel:8278651821"><span class="material-symbols-outlined text-sm">call</span>Call: +91 8278651821</a></div></div></div><div class="pt-space-lg border-t border-surface-variant flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2026 Anushree Sharma. All Rights Reserved.</p><div class="flex items-center gap-space-md"><span class="inline-block h-2 w-2 rounded-full bg-primary"></span><span>Open to New Engagements</span></div></div></div></footer>
+
+
+
+<span id="PING_CONTENT_PUSH_NOTIFICATION" style="display: none;"></span><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
